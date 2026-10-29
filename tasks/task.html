@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #123b70;
+            font-size: 42px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .line {
+            border-top: 2px solid #123b70;
+            margin-bottom: 38px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th,
+        td {
+            border: 1.5px solid #222;
+            text-align: center;
+            vertical-align: middle;
+            padding: 12px 8px;
+            font-size: 24px;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .day {
+            width: 18%;
+        }
+
+        .time {
+            width: 23%;
+        }
+
+        .topic {
+            width: 35%;
+        }
+
+        .header-row {
+            height: 55px;
+        }
+
+        .data-row {
+            height: 64px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML TABLES</h1>
+    <div class="line"></div>
+
+    <table>
+
+        <!-- Main Header -->
+        <tr class="header-row">
+            <th rowspan="3" class="day">day</th>
+
+            <th colspan="2">Seminar</th>
+
+            <th rowspan="3" class="topic">Topic</th>
+        </tr>
+
+        <!-- Schedule Header -->
+        <tr class="header-row">
+            <th colspan="2">Schedule</th>
+        </tr>
+
+        <!-- Time Header -->
+        <tr class="header-row">
+            <th class="time">Begin</th>
+            <th class="time">End</th>
+        </tr>
+
+        <!-- Monday -->
+        <tr class="data-row">
+            <th rowspan="2">Monday</th>
+            <td>8:00a.m</td>
+            <td>5:00PM</td>
+            <td>Tables in Html</td>
+        </tr>
+
+        <tr class="data-row">
+            <td>8:00a.m</td>
+            <td>11:00PM</td>
+            <td>Css Styling</td>
+        </tr>
+
+        <!-- Tuesday -->
+        <tr class="data-row">
+            <th rowspan="3">Tuesday</th>
+            <td>8:00a.m</td>
+            <td>11:00PM</td>
+            <td rowspan="2">Sql Classes</td>
+        </tr>
+
+        <tr class="data-row">
+            <td>11:00AM</td>
+            <td>01:00PM</td>
+        </tr>
+
+        <tr class="data-row">
+            <td>11:00AM</td>
+            <td>01:00PM</td>
+            <td>Python classes</td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr class="data-row">
+            <th>Wednesday</th>
+            <td>2:00PM</td>
+            <td>4:00PM</td>
+            <td>Java</td>
+        </tr>
+
+        <!-- Thursday -->
+        <tr class="data-row">
+            <th rowspan="2">Thursday</th>
+            <td>10:00AM</td>
+            <td>12:00PM</td>
+            <td>Web Development</td>
+        </tr>
+
+        <tr class="data-row">
+            <td>2:00PM</td>
+            <td>5:00PM</td>
+            <td>Bootstrap</td>
+        </tr>
+
+        <!-- Friday -->
+        <tr class="data-row">
+            <th rowspan="3">Friday</th>
+            <td>8:00a.m</td>
+            <td>10:00AM</td>
+            <td rowspan="2">JavaScript Basics</td>
+        </tr>
+
+        <tr class="data-row">
+            <td>10:15AM</td>
+            <td>12:15PM</td>
+        </tr>
+
+        <tr class="data-row">
+            <td>2:00PM</td>
+            <td>4:00PM</td>
+            <td>jQuery</td>
+        </tr>
+
+        <!-- Saturday -->
+        <tr class="data-row">
+            <th rowspan="2">Saturday</th>
+            <td>9:00a.m</td>
+            <td>11:00AM</td>
+            <td>Project Work</td>
+        </tr>
+
+        <tr class="data-row">
+            <td>11:15AM</td>
+            <td>1:15PM</td>
+            <td>Project Discussion</td>
+        </tr>
+
+        <!-- Sunday -->
+        <tr class="data-row">
+            <th>Sunday</th>
+            <td colspan="2">Holiday</td>
+            <td>No Seminar</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

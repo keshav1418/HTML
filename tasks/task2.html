@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 24px 35px;
+            font-size: 25px;
+            color: #111;
+        }
+
+        section {
+            border-top: 2px solid #777;
+            padding: 30px 0 28px;
+        }
+
+        section:first-child {
+            padding-top: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 0 0 22px;
+            font-weight: bold;
+        }
+
+        .green {
+            color: #188044;
+        }
+
+        .blue {
+            color: #1755ad;
+        }
+
+        .purple {
+            color: #4b1594;
+        }
+
+        .orange {
+            color: #c45a12;
+        }
+
+        ul,
+        ol {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 65px;
+        }
+
+        li {
+            padding-left: 4px;
+            margin: 5px 0;
+        }
+
+        .nested {
+            padding-left: 65px;
+        }
+
+        .nested > li {
+            font-weight: bold;
+        }
+
+        .nested ul {
+            padding-left: 60px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        .nested ul li {
+            font-weight: normal;
+            margin: 5px 0;
+        }
+
+        dl {
+            margin: 0;
+        }
+
+        dt {
+            display: inline-block;
+            width: 125px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        dt::after {
+            content: ":";
+            display: inline-block;
+            margin-left: 8px;
+        }
+
+        dd {
+            display: inline;
+            margin: 0;
+        }
+
+        dd::after {
+            content: "";
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Unordered List -->
+    <section>
+        <h2 class="green">1. Unordered List: My Favorite Fruits</h2>
+
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Grapes</li>
+        </ul>
+    </section>
+
+    <!-- 2. Ordered List -->
+    <section>
+        <h2 class="blue">2. Ordered List: Steps to Make Lemonade</h2>
+
+        <ol>
+            <li>Take a lemon</li>
+            <li>Cut it in half</li>
+            <li>Squeeze the juice</li>
+            <li>Add sugar and water</li>
+            <li>Stir well and serve chilled</li>
+        </ol>
+    </section>
+
+    <!-- 3. Nested List -->
+    <section>
+        <h2 class="purple">3. Nested List: My Daily Schedule</h2>
+
+        <ul class="nested">
+            <li>
+                Morning
+                <ul>
+                    <li>Wake up</li>
+                    <li>Exercise</li>
+                    <li>Breakfast</li>
+                </ul>
+            </li>
+
+            <li>
+                Afternoon
+                <ul>
+                    <li>Attend Classes</li>
+                    <li>Lunch</li>
+                    <li>Library Study</li>
+                </ul>
+            </li>
+
+            <li>
+                Evening
+                <ul>
+                    <li>Play Games</li>
+                    <li>Revision</li>
+                    <li>Dinner</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 4. Description List -->
+    <section>
+        <h2 class="orange">4. Description List: HTML Basics</h2>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+
+            <dt>Tag</dt>
+            <dd>A keyword enclosed in angle brackets</dd>
+
+            <dt>Element</dt>
+            <dd>A complete structure with opening and closing tags</dd>
+
+            <dt>Attribute</dt>
+            <dd>Provides additional information about an element</dd>
+        </dl>
+    </section>
+
+</body>
+</html>
